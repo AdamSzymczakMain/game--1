@@ -1,18 +1,24 @@
 // import React from "react";
 import ReactDOM from "react-dom/client";
 import { Link } from "./components/Link";
+import { HeadingItalic } from "./components/Headingitalic";
+import { Logger } from "./components/Logger";
 
 const element = (
   <>
-    <h1>Nasza stron!</h1>
+    <Logger>
+      <HeadingItalic>Google super stron!</HeadingItalic>
+    </Logger>
     <main>
       <Link text="Google" shouldOpenNewTab={true} />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro
-        ut nam delectus tempora, omnis consequatur, in, sequi suscipit culpa
-        quibusdam dolores aperiam facere magnam iusto libero veniam laboriosam
-        esse.
-      </p>
+      <Logger>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+          porro ut nam delectus tempora, omnis consequatur, in, sequi suscipit
+          culpa quibusdam dolores aperiam facere magnam iusto libero veniam
+          laboriosam esse.
+        </p>
+      </Logger>
     </main>
     <Link shouldOpenNewTab={false} />
   </>
